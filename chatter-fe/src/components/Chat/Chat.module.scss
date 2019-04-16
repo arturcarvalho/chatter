@@ -1,0 +1,27 @@
+.wrapper {
+  height: 80%;
+  overflow: auto;
+  padding-top: 40px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 100%;
+  width: var(--width);
+  background-color: var(--bg-color);
+}
+
+// >=321px AND <= 640px (works for Android J7 and iphone 6/7/8
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  .wrapper {
+    padding-top: 0;
+    height: 100%;
+  }
+
+  .chat {
+    border-radius: 0;
+  }
+}

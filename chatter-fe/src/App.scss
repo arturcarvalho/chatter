@@ -1,0 +1,68 @@
+/* full height*/
+html,
+body,
+.App,
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  color: var(--font-color);
+}
+
+html {
+  background: rgba(209, 129, 58, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(209, 129, 58, 1) 0%,
+    rgba(211, 112, 59, 1) 55%,
+    rgba(211, 84, 59, 1) 100%
+  );
+}
+
+// default vars (if the data-theme doesn't exist, it defaults to these values)
+:root {
+  --width: 480px;
+  --primary-color: #be2a20;
+  --secondary-color: #989ea0;
+  --tertiary-color: #d3d3d4;
+  --quaternary-color: #fff;
+
+  --font-color: #424242;
+  --bg-color: #f8f9fd;
+
+  --bubble-left-bg: var(--primary-color);
+  --bubble-left-color: var(--bg-color);
+  --bubble-right-bg: var(--tertiary-color);
+  --bubble-right-color: var(--font-color);
+  --btn-color: var(--quaternary-color);
+  --input-bg: var(--quaternary-color);
+  --input-color: var(--font-color);
+}
+
+// apply dark theme vars
+[data-theme="dark"] {
+  --primary-color: #be2a20;
+  --secondary-color: #989ea0;
+  --tertiary-color: #d3d3d4;
+
+  --font-color: #f6f8fa;
+  --bg-color: #2c2c34;
+  --quaternary-color: #202126;
+
+  --bubble-left-bg: var(--primary-color);
+  --bubble-left-color: var(--font-color);
+  --bubble-right-bg: var(--quaternary-color);
+  --bubble-right-color: var(--tertiary-color);
+  --btn-color: var(--font-color);
+  --input-bg: var(--quaternary-color);
+  --input-color: var(--font-color);
+}
+
+// >=321px AND <= 640px (works for Android J7 and iphone 6/7/8
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  .App {
+    --width: 100%;
+  }
+}

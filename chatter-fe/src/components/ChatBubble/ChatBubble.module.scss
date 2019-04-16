@@ -1,0 +1,54 @@
+.bubble {
+  width: 240px;
+  margin: 20px 0;
+}
+
+.bubbleLeft {
+  composes: bubble;
+  text-align: left;
+  justify-content: flex-start;
+  margin-right: auto;
+  margin-left: 25px;
+}
+
+.bubbleRight {
+  composes: bubble;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+.bubbleMiddle {
+  composes: bubble;
+  width: 100%;
+  margin: 0 auto;
+  font-style: italic;
+  color: var(--secondary-color);
+  padding: 10px 0px;
+}
+
+.info {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--font-color);
+  font-size: 0.9em;
+  margin-bottom: 0.1em;
+}
+
+.message {
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.messageLeft {
+  composes: message;
+  background-color: var(--bubble-left-bg);
+  color: var(--bubble-left-color);
+}
+
+.messageRight {
+  composes: message;
+  background-color: var(--bubble-right-bg);
+  color: var(--bubble-right-color);
+}

@@ -1,0 +1,14 @@
+.wrapper {
+  /* expand to fill area */
+  flex: 1;
+
+  // show scroll it too many messages (try overlay if width going wild)
+  overflow-y: overlay;
+  margin: 0 auto;
+  display: flex;
+}
+
+.messages {
+  margin-top: auto;
+  width: var(--width);
+}
